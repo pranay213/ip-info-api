@@ -30,9 +30,10 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/connection", (req, res) => {
-  res.status(200).send("connected");
-});
+// app.get("/connection", (req, res) => {
+//   res.status(200).send("connected");
+// });
+
 app.use("/api/location", mmdbRouter);
 
 app.listen(PORT, () => {
